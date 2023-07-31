@@ -20,3 +20,19 @@
 
 ### Upload das alterações para repositório remoto
     git push -u origin main
+
+## Alterando um commit localmente
+
+Temos duas formas de fazer isso
+
+1. A primeira forma de fazer isso é usando o comando:
+
+        git reset --hard HEAD
+        git reset --hard 69a3a3bce907b2ed5ddb137fdc9cc52e58640e87
+
+    Este comando desfaz as ultimas alterações até a versão.
+
+2. Já este comando remove o commit porem sem desfazer as ultimas alterações:
+
+        git reset --soft HEAD
+        git reset --soft 69a3a3bce907b2ed5ddb137fdc9cc52e58640e87
